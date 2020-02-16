@@ -18,5 +18,10 @@ import { NestExpressApplication } from '@nestjs/platform-express';
       `PlayGround Running in: ${process.env.APP_PROTOCOL}://${process.env.APP_HOST}:${process.env.APP_PORT}/graphql`,
       'GraphQL',
     );
+
+    Logger.log(
+      `Conenctado a la Base de datos: ${process.env.DB_NAME}`,
+      'MongoDB',
+    );
   });
 })();
